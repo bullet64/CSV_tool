@@ -27,7 +27,7 @@ labelHinweis.place(x=80, y=0, width=420, height=120)
 
 
 
-import tkMessageBox
+#import tkMessageBox
 tkMessageBox.showinfo('Quelldatei','Bitte die Quelldatei auswählen!')
 
 # Datei zum Lesen oeffnen, mit Kontrolle ob Datei lesbar. Ansonsten exit()
@@ -43,7 +43,7 @@ else:
     print "Written content in the file successfully"
     
     
-import tkMessageBox
+#import tkMessageBox
 tkMessageBox.showinfo('Zieldatei','Bitte die Zieldatei auswählen!')
 
 
