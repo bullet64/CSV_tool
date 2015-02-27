@@ -5,17 +5,13 @@ version: 0.0.1
 @author: frank
 '''
 
-import time
 import tkMessageBox
 from tkFileDialog import *
-
 
 def buttonBeendenClick():
     if tkMessageBox.askyesno('Beenden', 'Soll das Programm wirklich beendet werden?'):
         root.quit()
         root.destroy()
-        
-
 
 from Tkinter import *            ## Tkinter importieren
 root=Tk()                        ## Wurzelfenster!
@@ -26,13 +22,10 @@ textfenster.pack()               ## und anzeigen
 labelHinweis = Label(master=root, text='Programm um eine .csv Datei von Google in eine\r.csv-Datei für den Import in myrcm vorzubereiten!', fg='white', bg='gray', font=('Arial', 12))
 labelHinweis.place(x=80, y=0, width=420, height=120)
 
-
-
 #import tkMessageBox
 tkMessageBox.showinfo('Quelldatei','Bitte die Quelldatei auswählen!')
 
 # Datei zum Lesen oeffnen, mit Kontrolle ob Datei lesbar. Ansonsten exit()
-
 myPath = askopenfilename(filetypes=[("Quelldatei", ".csv")])
 try:
     fobj_in = open(str(myPath),"r")
@@ -43,17 +36,12 @@ except IOError:
 else:
     print "Written content in the file successfully"
     
-    
 #import tkMessageBox
 tkMessageBox.showinfo('Zieldatei','Bitte die Zieldatei auswählen!')
 
-
 # Datei zum Schreiben oeffnen.
-
 myPath2 = asksaveasfilename(filetypes=[("Zieldatei", ".csv")])
 fobj_out = open(str(myPath2),"w")
-
-
 
 # Variable i definieren
 i = 1
@@ -70,8 +58,6 @@ for line in fobj_in:
 fobj_in.close()
 fobj_out.close()
 
-#import tkMessageBox
-#tkMessageBox.showwarning('Programmende','Sie haben es geschafft!')
 # Button Beenden
 buttonBeenden = Button(master=root, bg='#FBD975', text='Programm beenden?',
                        command=buttonBeendenClick)
