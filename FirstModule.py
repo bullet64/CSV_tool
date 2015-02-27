@@ -44,7 +44,7 @@ else:
     
     
 import tkMessageBox
-tkMessageBox.showinfo('Zieldatei','Bitte die Zieldatei auswaehlen!')
+tkMessageBox.showinfo('Zieldatei','Bitte die Zieldatei auswählen!')
 
 
 # Datei zum Schreiben oeffnen.
