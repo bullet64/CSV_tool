@@ -7,13 +7,13 @@ version: 0.0.1
 
 import tkMessageBox
 from tkFileDialog import *
+from Tkinter import *            ## Tkinter importieren
 
 def buttonBeendenClick():
     if tkMessageBox.askyesno('Beenden', 'Soll das Programm wirklich beendet werden?'):
         root.quit()
         root.destroy()
 
-from Tkinter import *            ## Tkinter importieren
 root=Tk()                        ## Wurzelfenster!
 root.title('CSV-Datei: Kommas gegen Semikolons tauschen!')    ## Titel festlegen
 textfenster = Text(root,background='grey')         ## Ein Textfenster erzeugen
