@@ -14,6 +14,7 @@ def buttonBeendenClick():
     if tkMessageBox.askyesno('Beenden', 'Soll das Programm wirklich beendet werden?'):
         root.quit()
         root.destroy()
+        
 
 
 from Tkinter import *            ## Tkinter importieren
