@@ -14,15 +14,7 @@ def buttonBeendenClick():
     if tkMessageBox.askyesno('Beenden', 'Soll das Programm wirklich beendet werden?'):
         root.quit()
         root.destroy()
-'''
-# Alt, wird nicht mehr benötigt!
-# Zeit und Datum erfassen
-Datum = time.strftime("%d.%m.%Y")
-Uhrzeit = time.strftime("%H:%M:%S")
-    
-# Textausgabe in der Konsole
-#print "Das Datum von heute ist der {}, die Uhrzeit {}".format(Datum,Uhrzeit)
-'''
+
 
 from Tkinter import *            ## Tkinter importieren
 root=Tk()                        ## Wurzelfenster!
