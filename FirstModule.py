@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 Created on 24.02.2015
-version: 0.0.2
+version: 0.0.1
 @author: frank
 '''
 
